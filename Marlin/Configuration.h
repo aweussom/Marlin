@@ -65,11 +65,11 @@
 #endif
   
 // 主控芯片
-#ifdef MCU_STM32F401RC
-  #define USER_STM32F401  1
-#else
-  #define USER_STM32F103  1
-#endif
+//#ifdef MCU_STM32F401RC
+//  #define USER_STM32F401  1
+//#else
+#define USER_STM32F103  1
+//#endif
 
 #define STR_HELPER(x) #x
 #define STR(x) STR_HELPER(x)
@@ -78,20 +78,22 @@
   /**
    * Release version. Leave the Marlin version or apply a custom scheme.
    */
-  #ifndef SHORT_BUILD_VERSION
-    #if ENABLED(USER_STM32F103)
-      #define SHORT_BUILD_VERSION "2.1.x-F1" //F103版本
-    #elif ENABLED(USER_STM32F401)
-      #define SHORT_BUILD_VERSION "2.1.x-F4" // F401版本
-    #endif
-  #endif
+  #define SHORT_BUILD_VERSION "2.1.x-F1" //F103版本 hardcoding the F103 version: STM32F103RCT6
+  //#define SHORT_BUILD_VERSION "2.1.x-F1" //F103版本
+  //#ifndef SHORT_BUILD_VERSION
+  //  #if ENABLED(USER_STM32F103)
+  //    #define SHORT_BUILD_VERSION "2.1.x-F1" //F103版本
+  //  #elif ENABLED(USER_STM32F401)
+  //    #define SHORT_BUILD_VERSION "2.1.x-F4" // F401版本
+  //  #endif
+  //#endif
 
   // Author info of this build printed to the host during boot and M115
-  #define STRING_CONFIG_H_AUTHOR "Synman" // Who made the changes.
+  #define STRING_CONFIG_H_AUTHOR "Wossname" // Who made the changes.
   //#define CUSTOM_VERSION_FILE Version.h // Path from the root directory (no quotes)
   #define MACVERSION        STRING_CONFIG_H_AUTHOR
   #define SOFTVERSION       SHORT_BUILD_VERSION
-  #define MACHINE_TYPE      "Ender-3 S1 Pro"
+  #define MACHINE_TYPE      "Ender-3 S1 Pro" //STM32F103RCT6
 
   #ifndef ENDER_MACHINE_OVERRIDE
     #define FIRMWARE_VERSION  "2.1.x-PA"
@@ -123,7 +125,7 @@
   #endif
 
   // Author info of this build printed to the host during boot and M115
-  #define STRING_CONFIG_H_AUTHOR "Synman" // Who made the changes.
+  #define STRING_CONFIG_H_AUTHOR "Wossname" // Who made the changes.
   //#define CUSTOM_VERSION_FILE Version.h // Path from the root directory (no quotes)
   #define MACVERSION        STRING_CONFIG_H_AUTHOR
   #define SOFTVERSION       SHORT_BUILD_VERSION
@@ -160,7 +162,7 @@
   #endif
 
   // Author info of this build printed to the host during boot and M115
-  #define STRING_CONFIG_H_AUTHOR "Synman" // Who made the changes.
+  #define STRING_CONFIG_H_AUTHOR "Wossname" // Who made the changes.
   //#define CUSTOM_VERSION_FILE Version.h // Path from the root directory (no quotes)
   #define MACVERSION        STRING_CONFIG_H_AUTHOR
   #define SOFTVERSION       SHORT_BUILD_VERSION
@@ -197,13 +199,14 @@
 // @section machine
 
 // Choose the name from boards.h that matches your setup
-#ifndef MOTHERBOARD
-  #if ENABLED(USER_STM32F401)
-    #define MOTHERBOARD BOARD_CREALITY_V24S1_301F4
-  #elif ENABLED(USER_STM32F103)
-    #define MOTHERBOARD BOARD_CREALITY_V24S1_301
-  #endif
-#endif
+#define MOTHERBOARD BOARD_CREALITY_V24S1_301 // hardcoding for STM32F103RCT6
+//#ifndef MOTHERBOARD
+//  #if ENABLED(USER_STM32F401)
+//    #define MOTHERBOARD BOARD_CREALITY_V24S1_301F4
+//  #elif ENABLED(USER_STM32F103)
+//    #define MOTHERBOARD BOARD_CREALITY_V24S1_301
+//  #endif
+//#endif
 
 /**
  * Select the serial port on the board to use for communication with the host.
