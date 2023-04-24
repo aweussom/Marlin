@@ -4,9 +4,6 @@
 <h1 align="center">For Ender 3 S1 Pro with STM32F103RCT6 processor</h1>
 <h2 align="center">Use latest LCD frimware from Creality:</h2>
 <h2 align="center"><a href="https://www.creality.com/pages/download-ender-3-s1-pro?">Creality Ender 3 S1 Pro Downloads</a></h2>
-<br>
-<h1 align="center">PS: Marlin Autobuild is currently not updated - Build using PlatformIO ("Checkmark" down in left corner)</h1>
-
 
 <p align="center">
     <a href="/LICENSE"><img alt="GPL-V3.0 License" src="https://img.shields.io/github/license/marlinfirmware/marlin.svg"></a>
