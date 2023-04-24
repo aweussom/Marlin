@@ -5,6 +5,9 @@
 <h2 align="center">Use latest LCD frimware from Creality:</h2>
 <h2 align="center"><a href="https://www.creality.com/pages/download-ender-3-s1-pro?">Creality Ender 3 S1 Pro Downloads</a></h2>
 
+![plot](./20230423_230504-Ender3S1Pro-STM32F103RCT6-2.jpg)
+
+
 <p align="center">
     <a href="/LICENSE"><img alt="GPL-V3.0 License" src="https://img.shields.io/github/license/marlinfirmware/marlin.svg"></a>
     <a href="https://github.com/MarlinFirmware/Marlin/graphs/contributors"><img alt="Contributors" src="https://img.shields.io/github/contributors/marlinfirmware/marlin.svg"></a>
