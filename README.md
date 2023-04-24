@@ -4,7 +4,9 @@
 <h1 align="center">For Ender 3 S1 Pro with STM32F103RCT6 processor</h1>
 <h2 align="center">Use latest LCD frimware from Creality:</h2>
 <h2 align="center"><a href="https://www.creality.com/pages/download-ender-3-s1-pro?">Creality Ender 3 S1 Pro Downloads</a></h2>
-
+<hr>
+<br>
+<h2>Picture of STM32F103RCT6</h2>
 ![plot](./20230423_230504-Ender3S1Pro-STM32F103RCT6-2.jpg)
 
 
