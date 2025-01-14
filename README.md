@@ -2,6 +2,8 @@
 
 <h1 align="center">Marlin 3D Printer Firmware</h1>
 
+## Version for Artillery Sidewinder X1 using Makerbase MKS 12864 Mini V3.0 LCD
+
 <p align="center">
     <a href="/LICENSE"><img alt="GPL-V3.0 License" src="https://img.shields.io/github/license/marlinfirmware/marlin.svg"></a>
     <a href="https://github.com/MarlinFirmware/Marlin/graphs/contributors"><img alt="Contributors" src="https://img.shields.io/github/contributors/marlinfirmware/marlin.svg"></a>
